@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+    --primary-red :hsl(1, 90%, 64%);
+    --primary-blue:  hsl(219, 85%, 26%);
+    --secondary-white:hsl(0, 0%, 100%);
+    --secondary-veryLight-grayishBlue: hsl(210, 50%, 96%);
+    --secondary-light-grayishBlue1:hsl(211, 68%, 94%);
+    --secondary-light-grayishBlue2:  hsl(205, 33%, 90%);
+    --secondary-GrayishBlue:  hsl(219, 14%, 63%);
+    --secondary-dark-grayishBlue : hsl(219, 12%, 42%);
+    --secondary-veryDark-blue: hsl(224, 21%, 14%);
+}
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:var(--secondary-dark-grayishBlue);
+}
+.cntnr{
+    padding: 1em;
+}
+.header span{
+    background-color: var(--primary-blue);
+    color:  white;
+    padding:  .1em .5em;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.header h2{
+    color: var(--secondary-veryDark-blue);
+    font-size: 20px;
+}
+.header h3{
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notifications{
+    margin-block: 2em 1em;
+}
+.notif-details{
+    display: flex;
+    margin-block: 1em;
+    border-radius: 8px;
+    padding:.6em;
+}
+.unread{
+    background-color:var(--secondary-veryLight-grayishBlue);
+}
+
+.userImage-div{
+    margin-right:.5em;
+}
+.time{
+   margin-top: .5em;
+   display: block;
+   color:var(--secondary-GrayishBlue);
+}
+.user-name{
+    font-weight: 800;
+    font-size: 17px;
+    cursor: pointer;
+    margin-right: 7px;
+    color:var(--secondary-veryDark-blue);
+}
+.user-name:hover{
+    color: var(--primary-blue);
+}
+.reactedTo{
+    color:var(--primary-blue);
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 16px;
+}
+.fa{
+    color: rgb(253, 27, 27);
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.message{
+    border: 1px solid rgb(235, 228, 228);
+    max-width: 260px;
+    margin-left: 3em;
+    padding: .4em;
+}
+.message:hover{
+    background-color: var(--secondary-light-grayishBlue2);
+    cursor: pointer;
+}
+
+.reactedTo img{
+    width: 17%;
+    margin-inline: 9px;
+    margin-top: 5px;
+}
+
+
+
+@media(min-width:600px){
+    body{
+        font-size: 18px;
+    }
+    .cntnr{
+        padding: 2em;
+        max-width: 90%;
+        margin: auto;
+    }
+    .header h2{
+        font-size: 30px;
+    }
+    .header h3{
+        font-size: 23px;
+    }
+    .user-name{
+        font-size: 24px;
+    }
+    .reactedTo{
+        font-size: 20px;
+    }
+    .userImage-div{
+        margin-right: 1em;
+    }
+    .reactedTo img{
+        width: 10%;
+        position: relative;
+        top:10px;
+        right: -25em;
+    }
+    .message{
+        max-width:  90%;
+        padding: 2em 1em;
+    }
+}
