@@ -5,9 +5,10 @@ const notif = document.querySelectorAll('.notif')
 
 
 
-notif.forEach((div) => {
+notif.forEach((div,index) => {
    div.addEventListener('click',() => {
       div.style.backgroundColor = 'white'
+      redDot[index].style.display = "none"
       notifCount--
       notifCountBtn.innerText = notifCount
    })
