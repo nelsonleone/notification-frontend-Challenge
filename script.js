@@ -7,12 +7,12 @@ const notif = document.querySelectorAll('.notif')
 
 notif.forEach((div,index) => {
    div.addEventListener('click',() => {
-      div.style.backgroundColor = 'white'
-      redDot[index].style.display = "none"
-      if(notifCount > 0 ){
-        notifCount--
-      }
+      if(div.style.backgroundColor !== "white" && notifCount > 0){
+        div.style.backgroundColor = 'white'
+        redDot[index].style.display = "none"
+        notifCount - 1;
       notifCountBtn.innerText = notifCount
+      }
    })
 })
 
