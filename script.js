@@ -10,7 +10,7 @@ notif.forEach((div,index) => {
       if(div.style.backgroundColor !== "white" && notifCount > 0){
         div.style.backgroundColor = 'white'
         redDot[index].style.display = "none"
-        notifCount - 1;
+        notifCount--;
       notifCountBtn.innerText = notifCount
       }
    })
