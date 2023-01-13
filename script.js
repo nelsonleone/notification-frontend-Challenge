@@ -9,7 +9,9 @@ notif.forEach((div,index) => {
    div.addEventListener('click',() => {
       div.style.backgroundColor = 'white'
       redDot[index].style.display = "none"
-      notifCount--
+      if(notifCount > 0 ){
+        notifCount--
+      }
       notifCountBtn.innerText = notifCount
    })
 })
